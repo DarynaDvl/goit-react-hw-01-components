@@ -8,7 +8,7 @@ import {
 export const Statistics = ({ data, title }) => {
   return (
     <StatisticsCard>
-      <StatTitle>{title}</StatTitle>
+      {title && <StatTitle>{title}</StatTitle>}
 
       <StatList>
         {data.map(({ id, label, percentage }) => {
